@@ -1,0 +1,36 @@
+
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=5&title=wix
+
+
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Hacer un sitio web en python",
+    "description": "Trabajo freelancr",
+    "done": true
+}
+###
+
+GET http://localhost:3000/api/tasks/63af71de4ccef11aa22fab12
+###
+
+DELETE http://localhost:3000/api/tasks/63af71de4ccef11aa22fab13
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+
+PUT http://localhost:3000/api/tasks/63af71de4ccef11aa22fab12
+Content-Type: application/json
+
+{
+    "title": "Crear un sitio web en angular"
+}
